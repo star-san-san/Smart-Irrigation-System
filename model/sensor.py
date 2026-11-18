@@ -1,4 +1,3 @@
-"""sensor.py : Sensor (abstract) + TemperatureSensor, WaterLevelSensor, MoistureSensor."""
 import random
 from abc import ABC, abstractmethod
 
@@ -6,7 +5,6 @@ from .mesure import Mesure
 
 
 class Sensor(ABC):
-    """Capteur de base : abstraction + encapsulation."""
 
     def __init__(self, id: int, name: str, unit: str):
         self._id = id
